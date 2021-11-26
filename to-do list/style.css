@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #346377 0%, #284148 100%);
+    color: #ffd05d;
+    font-family: 'poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font: size 1.5rem;
+}
+
+header, form{ /*form is for the search bar*/
+    min-height: 20vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+form input, form button{ /*input and the button form*/
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button{ /*button form*/
+    color: #284148;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+form button:hover{ /*hover effect*/
+    background: #ffd05d;
+    color: white;
+    ;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font
+}
