@@ -8,6 +8,7 @@ const todoList = document.querySelector('.todo-list');
 //event listeners
 
 todoButton.addEventListener('click', addTodo); // addEventListener is a method that adds an event listener to the selected element.
+todoList.addEventListener('click', deleteCheck); function deleteCheck(event); //delete todo
 
 //functions
 
@@ -18,7 +19,7 @@ function addTodo(event){
 //create LI
 
 const newTodo = document.createElement('li'); //
-newTodo.innerText = 'hey';
+newTodo.innerText = todoInput.value; // innerText is a property that sets or returns the text content of the specified element. 
 newTodo.classList.add('todo-item');
 todoDiv.appendChild(newTodo);
 
@@ -31,13 +32,16 @@ todoDiv.appendChild(completedButton);
 //check trash button
 const trashButton = document.createElement('button');
 trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-trashButton.classList.add("complete-btn")
+trashButton.classList.add("trash-btn")
 todoDiv.appendChild(trashButton);
 
 //append to list
 
 todoList.appendChild(todoDiv); // appendChild is a method that inserts the specified element into the DOM before the specified child element.
 
+//clear Todo input value
+
+todoInput.value = "";
 }
 
 
